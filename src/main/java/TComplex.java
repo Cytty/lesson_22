@@ -1,9 +1,8 @@
 public class TComplex implements Tax {
-
+    private  int tax = 15;
 
     @Override
     public float calculateTax(Agent agent) {
-        int tax = 15;
         int payable;
         int profit = agent.getIncome() - agent.getCosts();
         if (profit > 0) {
